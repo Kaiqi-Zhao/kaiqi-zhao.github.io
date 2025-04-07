@@ -3,76 +3,488 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Dr. Kaiqi Zhao</title>
+  <title>Kaiqi Zhao</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    section.container {
+      margin-top: 0;
+      padding-top: 0;
+    }
+    .container {
+      max-width: 1000px;
+      /* margin: 0 auto; */
+      /* padding: 0 1rem; */
+    }
+    .hero h2 {
+      margin: 0.25rem 0;
+      border: none;
+    }
+    /* .hero h2 + h2 {
+      margin-top: 0.25rem;
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 0.5rem;
+    } */
+    .hero p {
+      margin-top: 0.5rem;
+    }
+    .profile-pic {
+      width: 180px;
+      height: 180px;
+      border: 4px solid white;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+  </style>
 </head>
 <body>
-  <header class="container">
+  <nav class="navbar">
+    <div class="container">
+      <a href="#home" class="logo">Kaiqi Zhao</a>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#awards">Awards</a></li>
+        <li><a href="#service">Services</a></li>
+        <li><a href="#teaching">Teaching</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="hero container" id="home">
     <img src="assets/kaiqi-zhao.jpg" alt="Kaiqi Zhao" class="profile-pic" />
-    <h1>Dr. Kaiqi Zhao</h1>
-    <h2>Assistant Professor, Oakland University</h2>
-    <p>Efficient AI | Model Compression | Edge/Cloud Computing</p>
+    <h1>Kaiqi Zhao</h1>
+    <h2>Assistant Professor, Computer Science and Engineering Department, <br> Oakland University</h2>
+    <!-- <h2>Director, Efficient AI Lab</h2> -->
   </header>
 
-  <section class="container">
-    <h2>Research Interests</h2>
-    <p>Efficient AI, Machine Learning/Deep Learning Model Compression (Knowledge Distillation, Pruning, Quantization), Distributed/Cloud/Edge Computing.</p>
+  <section class="container" id="research_interestes">
+    <h2>Research Interestes</h2>
+    <p>Efficient AI, Machine Learning/Deep Learning Model Compression (Knowledge Distillation, Pruning, Quantization), Distributed/Cloud/Edge Computing</p>
   </section>
 
-  <section class="container">
-    <h2>Education</h2>
+
+
+  <section class="container" id="bio">
+    <h2>Short Bio</h2>
+    <p>Kaiqi Zhao is an Assistant Professor in the Computer Science and Engineering Department at Oakland University, Michigan, since August 2024.
+        She is the director of Efficient AI Lab.
+        <!-- Her research interests are in deep learning model compression (knowledge distillation, pruning, and quantization), Edge AI, and distributed/cloud/edge computing.  -->
+        She earned her Ph.D. degree in the School of Computing and Augmented Intelligence at Arizona State University under the supervision of 
+        <a href="https://visa.lab.asu.edu/web/people/mingzhao/" target="_blank">Prof. Ming Zhao</a>.
+        Central to her research is innovating in model compression techniques to automatically and efficiently generate small, high-performance, and hardware-efficient machine learning/deep learning models,
+        catalyzing the advancement of AI on edge devices. <br><br>
+
+        Her research efforts are aimed to generate both fundamental scientific values and practical societal impacts.
+        As the first author, she has published peer-reviewed papers at top-tier AI conferences, e.g., AISTATS, ICASSP (Oral), and InterSpeech (Oral), and top-tier edge computing conferences, e.g., ACM/IEEE SEC (Best Poster Award).
+        As a co-author, she has also published papers at prestigious system and edge computing conferences, e.g., IEEE ICDCS, USENIX HotEdge and USENIX OpML.
+        Her work on "Knowledge Distillation via Module Replacing for Automatic Speech Recognition" has been integrated into the Amazon Alex library for production usage. <br><br>
+    
+        <!-- She has been actively contributing services to the activities of the research communities. 
+        She has served as the Program Committee (PC) Member for AAAI 2023-2025, the Conference Ph.D. Forum chair for ACM/IEEE SEC, and the invited reviewers for top AI conferences, 
+        including NeurIPS 2022-2025, ICML 2022-2025, ICLR 2024-2025, AAAI 2023-2025, AISTATS 2024&2025, ICASSP 2024&2025, and InterSpeech 2023-2025, 
+        as well as for high-impact journals, including IEEE Internet of Things Journal (Impact Factor: 11.1), IEEE Transactions on Neural Networks and Learning Systems (Impact Factor: 10.2), 
+        IEEE Transactions on Circuits and Systems for Video Technology (Impact Factor: 8.3), IEEE Transactions on Intelligent Vehicles (Impact Factor: 8.2). -->
+        She has been actively contributing to the research community by serving as a U.S. National Science Foundation (NSF) Reviewer (2025), 
+        Program Committee (PC) member for AAAI (2023–2025) and the Conference Ph.D. Forum chair for ACM/IEEE SEC (2021). 
+        She has also served as an invited reviewer for top-tier AI conferences, including NeurIPS (2022–2025), ICML (2022–2025), ICLR (2024–2025), AAAI (2023–2025), 
+        AISTATS (2024–2025), ICASSP (2024–2025), and Interspeech (2023–2025),
+        as well as for leading journals such as the IEEE Internet of Things Journal (Impact Factor: 11.1), IEEE Transactions on Neural Networks and Learning Systems (Impact Factor: 10.2), 
+        IEEE Transactions on Circuits and Systems for Video Technology (Impact Factor: 8.3), and IEEE Transactions on Intelligent Vehicles (Impact Factor: 8.2).
+    </p>
+  </section>
+
+
+
+  <section class="container" id="news">
+    <h2>News</h2>
     <ul>
-      <li><strong>Ph.D. in Computer Science</strong>, Arizona State University, 2024</li>
-      <li><strong>M.S. in Software Engineering</strong>, Beihang University, 2018</li>
-      <li><strong>B.S. in Software Engineering</strong>, Inner Mongolia University, 2015</li>
+        <li>March 2025: One paper accepted to the CVPR Workshop on Efficient Large Vision Models.</li>
+        <li>March 2025: Awarded the Faculty Research Fellowship from Oakland University.</li>
+        <li>March 2025: One paper accepted to ICDCS 2025.</li>
+        <li>January 2025: Achieved an average student evaluation of 5.0/5.0 for CIS 4140 and 4.9/5.0 for CIS 5140 (Deep Learning and Applications).</li>
+        <li>October 2024: Delivered an invited talk titled "Revolutionizing Edge AI: Enhanced and Automated Model Compression" at the Lightning Research Talks in AI seminar, part of the Michigan Celebration of Women in Computing conference.</li>
+        <li>August 2024: Welcomed my first full-time Ph.D. student, Justin Kur.</li>
+        <li>August 2024: Joined Oakland University as a tenure-track Assistant Professor in the Computer Science and Engineering Department.</li>
+        <li>May 2024: One paper accepted and presented at AISTATS 2024.</li>
+        <li>April 2024: Successfully defended my Ph.D. dissertation.</li>
+        <li>January 2024: Awarded the Graduate College Completion Fellowship, one of the highest honors given to graduate students in the School of Computing and Augmented Intelligence (two recipients annually).</li>
+        <li>December 2023: Received the Best Poster Award at ACM/IEEE SEC 2023.</li>
+        <li>June 2023: One paper accepted and presented in the oral session at ICASSP 2023.</li>
+        <li>April 2023: One paper accepted and presented at AISTATS 2023.</li>
+        <li>September 2022: One paper accepted and presented in the oral session at Interspeech 2022.</li>
+        <li>July 2019: One paper accepted and presented at ACM/IEEE HotEdge 2019.</li>
+        <li>May 2019: One paper accepted and presented at USENIX OpML 2019.</li>        
     </ul>
   </section>
 
-  <section class="container">
-    <h2>Professional Experience</h2>
-    <ul>
-      <li><strong>Assistant Professor</strong>, Oakland University, 2024–Present</li>
-      <li><strong>Research Assistant / Instructor</strong>, Arizona State University, 2018–2024</li>
-      <li><strong>Applied Scientist Intern</strong>, Amazon Web Services, 2020–2022</li>
-    </ul>
-  </section>
 
-  <section class="container">
+
+
+<section class="container" id="experience">
+  <h2>Professional Experience</h2>
+  <ul>
+    <div style="margin-bottom: 1.1em;">
+      <strong>Oakland University</strong>, Computer Science and Engineering Department, Rochester, MI<br>
+      <em>Tenure-Track Assistant Professor</em>, August 2024 – Present
+    </div>
+
+    <div style="margin-bottom: 1.1em;">
+      <strong>Arizona State University</strong>, School of Computing and Augmented Intelligence (SCAI), Tempe, AZ
+      <ul>
+        <li><em>Research Assistant / Graduate Student Assistant</em>, August 2018 – May 2024</li>
+        <li><em>Instructor Assistant</em>, October 2023 – December 2023</li>
+        <li><em>Instructor</em>, August 2019 – May 2020</li>
+        <li><em>Teaching Assistant</em>, August 2018 – May 2022</li>
+      </ul>
+    </div>
+
+    <div style="margin-bottom: 1.1em;">
+      <strong>Amazon Web Services, Inc.</strong>
+      <ul>
+        <li><em>Applied Scientist Intern</em>, Santa Clara, CA, May 2022 – August 2022</li>
+        <li><em>Applied Scientist Intern</em>, Santa Clara, CA, May 2021 – August 2021</li>
+        <li><em>Applied Scientist Intern</em>, East Palo Alto, CA, May 2020 – August 2020</li>
+      </ul>
+    </div>
+
+    <div style="margin-bottom: 1.1em;">
+      <strong>Beihang University</strong>, School of Software, Beijing, China
+      <ul>
+        <li><em>Research Assistant</em>, September 2015 – March 2018</li>
+        <li><em>Teaching Assistant</em>, September 2016 – December 2017</li>
+      </ul>
+    </div>
+
+    <div style="margin-bottom: 1.1em;">
+      <strong>Venture Commune Investment Development Co. Ltd.</strong>, Beijing, China<br>
+      <em>Data Scientist Intern</em>, June 2016 – December 2017
+    </div>
+  </ul>
+</section>
+
+
+
+
+<section class="container" id="publications">
     <h2>Selected Publications</h2>
-    <ul>
-      <li><strong>AISTATS'24:</strong> Self-Supervised Quantization-Aware Knowledge Distillation</li>
-      <li><strong>SEC'23:</strong> Poster: Self-Supervised Quantization-Aware Knowledge Distillation (Best Poster Award)</li>
-      <li><strong>ICASSP'23:</strong> A Contrastive Knowledge Transfer Framework for Model Compression</li>
-      <li><a href="assets/CV_KaiqiZhao.pdf" target="_blank">See full publication list in CV</a></li>
+    <!-- <p>Google Scholar: <a href="https://scholar.google.com/citations?user=SC8c2D8AAAAJ" target="_blank">https://scholar.google.com/citations?user=SC8c2D8AAAAJ</a></p> -->
+  
+    <h3>Conference Papers:</h3>
+    <ul style="list-style-type: decimal;">
+      <li>
+        <strong><span style="color: blue;">CVPR'25: </span></strong><strong>Progressive Element-wise Gradient Estimation for Neural Network Quantization</strong><br>
+        <strong>K. Zhao</strong><br>
+        <em>IEEE / CVF Computer Vision and Pattern Recognition Conference (CVPR) Workshop on Efficient Large Vision Models</em>, June 2025.
+      </li>
+      <li>
+        <strong><span style="color: blue;">ICDCS'25: </span></strong><strong>Smart Blue Light Pole-based Real-Time Crowd Counting for Smart Campuses</strong><br>
+        Y. Chen, <strong>K. Zhao</strong>, M. Zhao<br>
+        <em>45th IEEE International Conference on Distributed Computing Systems (ICDCS)</em>, July 2025. <span style="font-style: italic;"><strong>(Acceptance Rate: 19.7%)</strong></span>
+      </li>
+      <li>
+        <strong><span style="color: blue;">AISTATS'24: </span></strong><strong>Self-Supervised Quantization-Aware Knowledge Distillation</strong><br>
+        <strong>K. Zhao</strong>, M. Zhao<br>
+        <em>27th International Conference on Artificial Intelligence and Statistics (AISTATS)</em>, May 2024. <span style="font-style: italic;"><strong>(Acceptance Rate: 27.6%)</strong></span>
+      </li>
+      <li>
+        <strong><span style="color: blue;">SEC'23: </span></strong><strong>Poster: Self-Supervised Quantization-Aware Knowledge Distillation</strong><br>
+        <strong>K. Zhao</strong>, M. Zhao<br>
+        <em>ACM / IEEE Symposium on Edge Computing (SEC)</em>, December 2023. <strong>(Best Poster Award)</strong>
+      </li>
+      <li>
+        <strong><span style="color: blue;">ICASSP'23 (Oral): </span></strong><strong>A Contrastive Knowledge Transfer Framework for Model Compression and Transfer Learning</strong><br>
+        <strong>K. Zhao</strong>, Y. Chen, M. Zhao<br>
+        <em>IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP)</em>, June 2023. <strong>(Oral)</strong>
+      </li>
+      <li>
+        <strong><span style="color: blue;">AISTATS'23: </span></strong><strong>Automatic Attention Pruning: Improving and Automating Model Pruning using Attentions</strong><br>
+        <strong>K. Zhao</strong>, A. Jain, M. Zhao<br>
+        <em>26th International Conference on Artificial Intelligence and Statistics (AISTATS)</em>, April 2023. <span style="font-style: italic;"><strong>(Acceptance Rate: 29%)</strong></span>
+      </li>
+      <li>
+        <strong><span style="color: blue;">Interspeech'22 (Oral): </span></strong><strong>Knowledge Distillation via Module Replacing for Automatic Speech Recognition with Recurrent Neural Network Transducer</strong><br>
+        <strong>K. Zhao</strong>, H. D. Nguyen, A. Jain, N. Susanj, A. Mouchtaris, L. Gupta, M. Zhao<br>
+        <em>23rd Interspeech Conference</em>, September 2022. <strong>(Oral)</strong>
+      </li>
+      <li>
+        <strong><span style="color: blue;">HotEdge'19: </span></strong><strong>Exploring the Use of Synthetic Gradients for Distributed Deep Learning across Cloud and Edge Resources</strong><br>
+        Y. Chen, <strong>K. Zhao</strong>, B. Li, M. Zhao<br>
+        <em>2nd USENIX Workshop on Hot Topics in Edge Computing (HotEdge)</em>, July 2019. <span style="font-style: italic;"><strong>(Acceptance Rate: 29%)</strong></span>
+      </li>
+      <li>
+        <strong><span style="color: blue;">OpML'19: </span></strong><strong>KnowledgeNet: Disaggregated and Distributed Training and Serving of Deep Neural Networks</strong><br>
+        S. Biookaghazadeh, Y. Chen, <strong>K. Zhao</strong>, M. Zhao<br>
+        <em>USENIX Conference on Operational Machine Learning (OpML)</em>, May 2019
+      </li>
+    </ul>
+  
+    <!-- <h3>Journals</h3>
+    <ul style="list-style-type: decimal;">
+      <li>
+        <strong>Comprehensive Evaluation of Small and Medium Enterprises</strong><br>
+        X. Du, <strong>K. Zhao</strong>, W. Yuan, Q. Yang, J. Zhang<br>
+        <em>Journal of University of Science and Technology of China</em>, 48(6): 90 - 100, 2018
+      </li>
+      <li>
+        <strong>Design and Implementation of a PID-based Motion Control System for Mobile Robots</strong><br>
+        X. Du, <strong>K. Zhao</strong><br>
+        <em>Journal on Communications</em>, Vol.37 No. Z1 [43–49], 2016
+      </li>
+    </ul> -->
+  
+    <h3>Pre-print:</h3>
+    <ul style="list-style-type: decimal;">
+      <li>
+        <strong>Data-Augmented Quantization-Aware Knowledge Distillation</strong><br>
+        Justin Kur, <strong>K. Zhao</strong><br>
+        Under review
+      </li>
+      <li>
+        <strong>Mitigating the Environmental Impact of Generative AI for Sustainability</strong><br>
+        <strong>K. Zhao</strong>, D. Sui, T. Sanchez, S. Shaw, Y. Fu, W. Gong, H. Liu, X. Huang, J. Jiao, X. Ye<br>
+        Under review
+      </li>
     </ul>
   </section>
+  
 
-  <section class="container">
+
+
+
+  <!-- <section class="container" id="education">
+    <h2>Education</h2>
+    <div style="margin-bottom: 1.1em;">
+      <strong>Ph.D. in Computer Science</strong>, May 2024<br>
+      <strong>Arizona State University</strong>, Tempe, AZ<br>
+      Dissertation: Improved and Automated Machine Learning Model Compression<br>
+      Advisor: Prof. Ming Zhao
+    </div>
+    <div style="margin-bottom: 1.1em;">
+      <strong>M.S. in Software Engineering, National Graduate Fellowship winner</strong>, March 2018<br>
+      <strong>Beihang University</strong>, Beijing, China<br>
+      Dissertation: An Approach for Comprehensive Evaluation of Small and Medium Enterprises<br>
+      Advisor: Prof. Xiaoping Du; Co-Advisor: Prof. Qinghong Yang
+    </div>
+    <!-- <div style="margin-bottom: 1.1em;">
+      <strong>B.S. in Software Engineering</strong>, July 2015<br>
+      <strong>Inner Mongolia University</strong>, Inner Mongolia, China<br>
+      Dissertation: Design and Implementation of a PID-Based Motion Control System for the Mobile Robot<br>
+      Advisor: Prof. Liqiang He
+    </div> -->
+  </section> -->
+  
+
+
+  <section class="container" id="awards">
     <h2>Awards</h2>
     <ul>
-      <li>Faculty Research Fellowship, Oakland University, 2025</li>
-      <li>Dean’s Dissertation Award Nominee, ASU, 2024</li>
-      <li>Best Poster Award, ACM/IEEE SEC, 2023</li>
+      <li>
+        <strong>Faculty Research Fellowship</strong>, Oakland University, 2025
+      </li>
+      <li>
+        <strong>Nomination of Dean’s Dissertation Award</strong>, Arizona State University, 2024
+      </li>
+      <li>
+        <strong>Graduate College Completion Fellowship</strong>, Arizona State University, 2024<br>
+        <em>The most prestigious award given to graduate students in the School of Computing and Augmented Intelligence <strong>(two recipients per year)</strong>.</em> 
+      </li>
+      <li>
+        <strong>ACM/IEEE Symposium on Edge Computing (SEC) NSF Best Poster Award</strong>, 2023
+      </li>
+      <li>
+        <strong>ACM/IEEE Symposium on Edge Computing (SEC) NSF Student Travel Grant</strong>, 2023
+      </li>
+      <li>
+        <strong>School of Computing and Augmented Intelligence (SCAI) Doctoral Fellowship</strong>, Arizona State University, 2023
+      </li>
+      <li>
+        <strong>School of Computing and Augmented Intelligence (SCAI) Doctoral Fellowship</strong>, Arizona State University, 2022
+      </li>
+      <li>
+        <strong>ACM/IEEE Symposium on Edge Computing (SEC) NSF Student Travel Grant</strong>, 2021
+      </li>
+      <li>
+        <strong>National Graduate Fellowship</strong>, Beihang University, China, 2017<br>
+        <em>The most prestigious award given to graduate students in the department of software engineering <strong>(five recipients per year)</strong>.</em> 
+      </li>
+      <li>
+        <strong>Excellence Award in the Global Competition of the Open Innovation Business Contest 5.0 of NTT DATA</strong>, Japan, 2017<br>
+        <em>Represented the sole champion team from China, garnering media coverage from prominent mainstream outlets, 
+        e.g., <a href="http://japan.people.com.cn/BIG5/n1/2017/0316/c35421-29150003.html" target="_blank">PEOPLE.CN</a>, 
+        <a href="https://oi.nttdata.com/en/contest/5th/venue/c07/" target="_blank">NTT DATA</a>,
+        and <a href="https://soft.buaa.edu.cn/news_nry.jsp?urltype=news.NewsContentUrl&wbtreeid=1116&wbnewsid=1880" target="_blank">Beihang University</a>.</em>
+      </li>
+      <li>
+        <strong>Champion Winner in China Contest Division of the Open Innovation Business Contest 5.0 of NTT DATA</strong>, China, 2017
+      </li>
+      <li>
+        <strong>Outstanding Graduate Fellowship</strong>, Beihang University, China, 2016
+      </li>
+      <li>
+        <strong>Overseas Education and Practice Award</strong>, Beihang University, China, 2016
+      </li>
+      <li>
+        <strong>Academic Excellence Fellowship</strong>, Beihang University, China, 2016
+      </li>
+      <li>
+        <strong>Excellent Student Fellowship</strong>, Beihang University, China, 2016
+      </li>
     </ul>
   </section>
+  
 
-  <section class="container">
-    <h2>Professional Service</h2>
+
+  
+  <section class="container" id="service">
+    <h2>Professional Services</h2>
+  
+    <h3 style="margin-bottom: 0.2em;">Conference Chair</h3><ul style="margin-top: 0.2em;">
+      <li><strong>SEC:</strong> ACM/IEEE Symposium on Edge Computing Ph.D. Forum Chair, 2021</li>
+    </ul>
+  
+    <h3 style="margin-bottom: 0.2em;">Program Committee Member</h3><ul style="margin-top: 0.2em;">
+      <li>The 39th Annual AAAI Conference on Artificial Intelligence, 2025</li>
+      <li>The 38th Annual AAAI Conference on Artificial Intelligence, 2024</li>
+      <li>The 37th Annual AAAI Conference on Artificial Intelligence, 2023</li>
+    </ul>
+  
+    <h3 style="margin-bottom: 0.2em;">Invited Reviewer</h3><ul style="margin-top: 0.2em;">
+    <!-- <h4 style="margin-bottom: 0.2em;">Conferences</h4><ul style="margin-top: 0.2em;"> -->
+        <li><strong>U.S. National Science Foundation (NSF) Reviewer</strong>, 2025</li>
+        <li><strong>NeurIPS</strong>, 2025, 2024, 2023, 2022</li>
+        <li><strong>ICML</strong>, 2025, 2024, 2023, 2022</li>
+        <li><strong>ICLR</strong>, 2025, 2024</li>
+        <li><strong>AAAI</strong>, 2025, 2024, 2023</li>
+        <li><strong>AISTATS</strong>, 2025, 2024</li>
+        <li><strong>ICASSP</strong>, 2025, 2024</li>
+        <li><strong>InterSpeech</strong>, 2025, 2024, 2023</li>
+        <li><strong>MLSP</strong>, 2025, 2023</li>
+        <li><strong>HotEdge</strong>, 2020</li>
+    <!-- </ul> -->
+  
+    <!-- <h4 style="margin-bottom: 0.2em;">Journals</h4><ul style="margin-top: 0.2em;"> -->
+      <li><strong>IEEE Internet of Things Journal</strong> (Impact Factor: 11.1), 2025</li>
+      <li><strong>IEEE Transactions on Neural Networks and Learning Systems</strong> (Impact Factor: 10.2), 2025</li>
+      <li><strong>IEEE Transactions on Circuits and Systems for Video Technology</strong> (Impact Factor: 8.3), 2025 </li>
+      <li><strong>IEEE Transactions on Intelligent Vehicles</strong> (Impact Factor: 8.2), 2025 </li>
+      <li><strong>IEEE Transactions on Artificial Intelligence</strong> (Impact Factor: 5.94), 2025</li>
+      <li><strong>Journal of Marine Science and Engineering</strong> (Impact Factor: 2.8), 2025</li>
+      <li><strong>Energies</strong> (Impact Factor: 3.3), 2025</li>
+      <li><strong>Engineering Reports</strong> (Impact Factor: 2.29), 2025</li>
+      <li><strong>ACM Transactions on Asian and Low-Resource Language Information Processing</strong> (Impact Factor: 2.0), 2025 </li>
+      <li><strong>Electronics</strong> (Impact Factor: 2.6), 2025 </li>
+      <li><strong>IEEE Transactions on Computers</strong> (Impact Factor: 3.7), 2025 </li>
+    </ul>
+  
+    <h3 style="margin-bottom: 0.2em;">Internal Committees</h3><ul style="margin-top: 0.2em;">
+      <li><strong>Member of Ph.D. Subcommittee</strong>, Computer Science and Engineering Department, Oakland University, Fall 2024 – Present</li>
+    </ul>
+  </section>
+  
+  
+  
+  <!-- <section class="container" id="Mentoring">
+    <h2>Mentoring</h2>
     <ul>
-      <li>Ph.D. Forum Chair, ACM/IEEE SEC 2021</li>
-      <li>PC Member: AAAI 2023–2025</li>
-      <li>Reviewer: NeurIPS, ICML, ICLR, IEEE Journals</li>
+      <li><strong>2024:</strong> Paper accepted to AISTATS'24</li>
+      <li><strong>2024:</strong> Started Assistant Professor position at Oakland University</li>
+      <li><strong>2023:</strong> Received Best Poster Award at ACM/IEEE SEC</li>
+    </ul>
+  </section> -->
+
+
+
+  <section class="container" id="teaching">
+    <h2>Teaching</h2>
+  
+    <h3 style="margin-bottom: 0.2em;">Instructor</h3>
+    <ul style="margin-top: 0.2em;">
+        <li style="margin-bottom: 0.5em;">
+            <strong>CIS 4140/5140— Deep Learning and Applications</strong><br>
+            Winter 2025, 24 students, Oakland University<br>
+            Fall 2024, 14 students, Oakland University<br>
+            <strong>Average student evaluation</strong> in fall 2024: 
+            <strong>5.0/5.0</strong> (CIS 4140, <a href="YOUR_LINK_HERE" target="_blank"><strong><span style="color: blue;">Link</span></a></strong>), 
+            <strong>4.9/5.0</strong> (CIS 5140, <a href="YOUR_LINK_HERE" target="_blank"><strong><span style="color: blue;">Link</span></a></strong>)
+          </li>
+      <li style="margin-bottom: 0.5em;">
+        <strong>CSE 485 — Capstone Projects I</strong><br>
+        Fall 2019, 100 students, Arizona State University
+      </li>
+      <li style="margin-bottom: 0.5em;">
+        <strong>CSE 486 — Capstone Projects II</strong><br>
+        Spring 2020, 144 students, Arizona State University
+      </li>
+    </ul>
+  
+    <h3 style="margin-bottom: 0.2em;">Guest Lecturer</h3>
+    <ul style="margin-top: 0.2em;">
+      <li style="margin-bottom: 0.5em;">
+        <strong>CSE 531 — Distributed and Multiprocessor Operating Systems</strong><br>
+        Fall 2023, 60 students, Arizona State University<br>
+        Topic: Intelligent Cloud+Edge Computing
+      </li>
+    </ul>
+  
+    <h3 style="margin-bottom: 0.2em;">Teaching Assistant</h3>
+    <ul style="margin-top: 0.2em;">
+      <li style="margin-bottom: 0.5em;">
+        <strong>CSE 531 — Distributed and Multiprocessor Operating Systems</strong><br>
+        Fall 2023, 101 students, Arizona State University
+      </li>
+      <li style="margin-bottom: 0.5em;">
+        <strong>CSE 546 — Cloud Computing</strong><br>
+        Spring 2022, 190 students, Arizona State University<br>
+        Spring 2021, 122 students, Arizona State University
+      </li>
+      <li style="margin-bottom: 0.5em;">
+        <strong>CSE 205 — Object-Oriented Program and Data</strong><br>
+        Spring 2019, about 150 students, Arizona State University<br>
+        Fall 2021, about 150 students, Arizona State University
+      </li>
+      <li style="margin-bottom: 0.5em;">
+        <strong>CSE 230 — Computer Organization and Assembly Language Programming</strong><br>
+        Summer 2019, 45 students, Arizona State University
+      </li>
+      <li style="margin-bottom: 0.5em;">
+        <strong>CSE 100 — Principles of Programming with C++</strong><br>
+        Fall 2018, about 100 students, Arizona State University
+      </li>
     </ul>
   </section>
+  
 
-  <section class="container">
+
+
+  <section class="container" id="contact">
     <h2>Contact</h2>
-    <p>Email: kaiqi.zhao@oakland.edu</p>
-    <p><a href="assets/CV_KaiqiZhao.pdf" target="_blank">Download CV (PDF)</a></p>
+    <p>Email: kaiqizhao@oakland.edu</p>
+    <p>Phone: 248-370-2211</p>
+    <p>Office: Room 514, Engineering Center, 115 Library Dr, Rochester, MI 48309</p>
+    <!-- <p><a href="assets/CV_KaiqiZhao.pdf" target="_blank">Download CV (PDF)</a></p> -->
   </section>
 
   <footer class="container">
     <p>&copy; 2025 Kaiqi Zhao</p>
   </footer>
+
+  <script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
 </body>
 </html>

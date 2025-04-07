@@ -1,37 +1,80 @@
-/* style.css */
+html {
+  scroll-padding-top: 80px; /* Prevent headings from hiding behind navbar */
+}
+
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Inter', sans-serif;
   margin: 0;
   padding: 0;
-  line-height: 1.6;
   background: #f9f9f9;
   color: #333;
+  line-height: 1.6;
 }
 
 .container {
   width: 90%;
-  max-width: 800px;
+  max-width: 900px;
   margin: auto;
-  padding: 2rem 0;
+  padding: 2rem 1rem;
 }
 
-header {
+.navbar {
+  background: white;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 1.25rem;
+  text-decoration: none;
+  color: #333;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #007acc;
+  font-weight: 500;
+}
+
+.nav-links li a:hover {
+  text-decoration: underline;
+}
+
+.hero {
   text-align: center;
   padding-top: 3rem;
 }
 
-header h1 {
+.hero h1 {
   font-size: 2.5rem;
   margin-bottom: 0.2rem;
 }
 
-header h2 {
+.hero h2 {
   font-size: 1.5rem;
   color: #666;
   margin-bottom: 0.5rem;
 }
 
-header p {
+.hero p {
   font-size: 1rem;
   color: #444;
 }
@@ -45,22 +88,23 @@ header p {
   border: 3px solid #555;
 }
 
-section h2 {
+h2 {
   font-size: 1.8rem;
   border-bottom: 2px solid #ccc;
   padding-bottom: 0.5rem;
-  margin-top: 2rem;
+  margin-top: 2.5rem;
 }
 
 ul {
   list-style: disc;
-  margin-left: 2rem;
+  padding-left: 1.5rem;
 }
 
 a {
   color: #0056b3;
   text-decoration: none;
 }
+
 a:hover {
   text-decoration: underline;
 }
